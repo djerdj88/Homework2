@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* The padding and border dont affect the width */
+}
+body{
+    background-image: url(img/black.jpg);
+    color: white;
+    font-family: 'Source Sans Pro',sans-serif;
+    line-height: 1.5;
+}
+
+p{
+    margin: 0;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav li{
+    font-size: 20px;
+    font-style: italic;
+    display: inline-block;
+    margin: 20px 30px; 
+}
+
+.avatar {
+    width: 100px;
+    float: left;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.nav a{
+    padding: 1px; 
+    border: 1px solid white;
+    border-radius: 5px; 
+}
+.nav a:hover{
+    border-color: blue; 
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.my-name{
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 550px) {
+    
+    .nav {
+        list-style-type: none;
+        text-align: left;
+        overflow: hidden;
+    }
+    
+    .nav a{
+        padding: 1px; 
+        border: 1px solid white;
+        border-radius: 5px; 
+    }
+    
+    
+    .nav li{
+        font-size: 20px;
+        font-style: italic;
+        display: block;
+        margin: 20px 30px; 
+    }
+}
